@@ -4,5 +4,5 @@ from django.db import models
 class Customers(models.Model):
     customer_ID = models.CharField(max_length=300, primary_key=True)
     customer_name = models.CharField(max_length=300)
-    register_date = models.DateField()
+    register_date = models.DateField(auto_now_add=True)
     customer_num = models.IntegerField()
